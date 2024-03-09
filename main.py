@@ -20,6 +20,7 @@ miles_label = tk.Label(window, text="Miles")
 km_label = tk.Label(window, text="Km")
 result_label = tk.Label(window, text=f" ")
 
+#  using lambda so the convert function don't run upon creation and only ran once button is clicked.
 calculate_button = tk.Button(window, text="Convert", command=lambda: convert(result_label))
 
 equal_to_label.grid(row=1, column=0, padx=10, pady=10)
