@@ -2,6 +2,7 @@ import tkinter as tk
 
 
 def convert(label):
+    """function that converts miles to km and display it in a label"""
     number_of_miles = float(input_box.get())
     kilometers = round(number_of_miles * 1.60934)
     label.config(text=f"{kilometers}")
